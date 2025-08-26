@@ -8,9 +8,10 @@ export function CTASection() {
   return (
     <Section>
       <div className="text-center mb-16">
+        <div className="eyebrow-heading">Ready to Start?</div>
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
           Let's Grow{" "}
-          <span className="gradient-blue bg-clip-text text-transparent">
+          <span className="gradient-primary bg-clip-text text-transparent">
             Together
           </span>
         </h2>

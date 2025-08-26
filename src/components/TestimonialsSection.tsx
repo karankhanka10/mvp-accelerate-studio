@@ -6,13 +6,13 @@ const testimonials = [
   {
     name: "Sarah Chen",
     role: "Founder, TechFlow",
-    content: "MVP Studio transformed our rough idea into a polished product in just 6 weeks. The attention to detail and technical expertise exceeded our expectations.",
+    content: "Varnixz transformed our rough idea into a polished product in just 6 weeks. The attention to detail and technical expertise exceeded our expectations.",
     rating: 5
   },
   {
     name: "Marcus Johnson",
     role: "CEO, GrowthLabs",
-    content: "Working with MVP Studio was a game-changer. They understood our vision perfectly and delivered an MVP that helped us secure our Series A funding.",
+    content: "Working with Varnixz was a game-changer. They understood our vision perfectly and delivered an MVP that helped us secure our Series A funding.",
     rating: 5
   },
   {
@@ -27,10 +27,11 @@ export function TestimonialsSection() {
   return (
     <Section>
       <div className="text-center mb-16">
+        <div className="eyebrow-heading">Client Success Stories</div>
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
           Clients{" "}
-          <span className="gradient-purple bg-clip-text text-transparent">
-            Love Me
+          <span className="gradient-secondary bg-clip-text text-transparent">
+            Love Us
           </span>
         </h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">

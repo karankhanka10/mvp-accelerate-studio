@@ -7,25 +7,25 @@ const services = [
     icon: Monitor,
     title: "MVP Development",
     description: "Full-stack web applications built with modern technologies, scalable architecture, and clean code.",
-    gradient: "gradient-blue"
+    gradient: "gradient-primary"
   },
   {
     icon: Palette,
     title: "Logo Design", 
     description: "Memorable brand identities that capture your vision and resonate with your target audience.",
-    gradient: "gradient-purple"
+    gradient: "gradient-secondary"
   },
   {
     icon: Globe,
     title: "Website Design",
     description: "Stunning, responsive websites that convert visitors into customers with optimized user experience.",
-    gradient: "gradient-pink"
+    gradient: "gradient-accent"
   },
   {
     icon: Smartphone,
     title: "App Development",
     description: "Native and cross-platform mobile applications that deliver exceptional user experiences.",
-    gradient: "gradient-blue"
+    gradient: "gradient-primary"
   }
 ]
 
@@ -33,9 +33,10 @@ export function ServicesSection() {
   return (
     <Section id="services">
       <div className="text-center mb-16">
+        <div className="eyebrow-heading">What We Offer</div>
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
           Development{" "}
-          <span className="gradient-pink bg-clip-text text-transparent">
+          <span className="gradient-accent bg-clip-text text-transparent">
             Services
           </span>
         </h2>

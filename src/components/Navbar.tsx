@@ -29,8 +29,8 @@ export function Navbar() {
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <div className="text-xl font-bold gradient-blue bg-clip-text text-transparent">
-            MVP Studio
+          <div className="text-xl font-bold gradient-primary bg-clip-text text-transparent">
+            Varnixz
           </div>
 
           {/* Desktop Navigation */}

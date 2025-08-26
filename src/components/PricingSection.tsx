@@ -42,9 +42,10 @@ export function PricingSection() {
   return (
     <Section id="pricing" className="bg-gradient-subtle">
       <div className="text-center mb-16">
+        <div className="eyebrow-heading">Investment Plans</div>
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
           Simple Pricing.{" "}
-          <span className="gradient-blue bg-clip-text text-transparent">
+          <span className="gradient-primary bg-clip-text text-transparent">
             Maximum Value.
           </span>
         </h2>
@@ -64,7 +65,7 @@ export function PricingSection() {
           >
             {plan.popular && (
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                <div className="gradient-blue px-4 py-2 rounded-full text-white text-sm font-medium flex items-center gap-1">
+                <div className="gradient-primary px-4 py-2 rounded-full text-white text-sm font-medium flex items-center gap-1">
                   <Star className="w-4 h-4" />
                   Most Popular
                 </div>

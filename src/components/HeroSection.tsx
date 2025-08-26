@@ -27,9 +27,10 @@ export function HeroSection() {
   return (
     <Section className="pt-32 pb-20 text-center">
       <div className="max-w-4xl mx-auto mb-16">
+        <div className="eyebrow-heading">Premium MVP Development</div>
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 animate-fade-in">
           From Ideas To{" "}
-          <span className="gradient-blue bg-clip-text text-transparent">
+          <span className="gradient-primary bg-clip-text text-transparent">
             Impact
           </span>
         </h1>

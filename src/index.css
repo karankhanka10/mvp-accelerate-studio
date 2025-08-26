@@ -8,36 +8,36 @@ All colors MUST be HSL for proper theming.
 
 @layer base {
   :root {
-    /* Core Dark Theme */
-    --background: 0 0% 0%;
-    --foreground: 0 0% 100%;
+    /* Premium Dark Theme - Varnixz */
+    --background: 0 0% 2%;
+    --foreground: 0 0% 98%;
 
     /* Card System */
-    --card: 0 0% 5%;
-    --card-foreground: 0 0% 100%;
-    --card-hover: 0 0% 8%;
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 98%;
+    --card-hover: 0 0% 7%;
 
     /* Interactive Elements */
-    --popover: 0 0% 5%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
 
-    /* Brand Colors */
-    --primary: 217 91% 60%;
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 217 91% 70%;
+    /* Premium Brand Colors */
+    --primary: 260 100% 70%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 260 100% 80%;
 
     /* Secondary UI */
-    --secondary: 0 0% 10%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 98%;
 
     /* Muted Elements */
-    --muted: 0 0% 8%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 0 0% 6%;
+    --muted-foreground: 0 0% 60%;
 
     /* Accent System */
-    --accent: 271 81% 56%;
-    --accent-foreground: 0 0% 100%;
-    --accent-glow: 271 81% 66%;
+    --accent: 285 100% 75%;
+    --accent-foreground: 0 0% 98%;
+    --accent-glow: 285 100% 85%;
 
     /* Status Colors */
     --destructive: 0 84% 60%;
@@ -48,11 +48,11 @@ All colors MUST be HSL for proper theming.
     --input: 0 0% 10%;
     --ring: 217 91% 60%;
 
-    /* Gradients */
-    --gradient-blue: linear-gradient(135deg, hsl(217 91% 60%), hsl(221 83% 53%));
-    --gradient-purple: linear-gradient(135deg, hsl(271 81% 56%), hsl(262 83% 58%));
-    --gradient-pink: linear-gradient(135deg, hsl(330 81% 60%), hsl(340 82% 52%));
-    --gradient-subtle: linear-gradient(135deg, hsl(0 0% 5%), hsl(0 0% 10%));
+    /* Premium Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(260 100% 70%), hsl(280 100% 75%));
+    --gradient-secondary: linear-gradient(135deg, hsl(285 100% 75%), hsl(305 100% 80%));
+    --gradient-accent: linear-gradient(135deg, hsl(320 100% 75%), hsl(340 100% 70%));
+    --gradient-subtle: linear-gradient(135deg, hsl(0 0% 2%), hsl(0 0% 6%));
 
     /* Shadows & Glows */
     --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.3);
@@ -124,24 +124,29 @@ All colors MUST be HSL for proper theming.
   }
 
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply bg-background text-foreground font-satoshi antialiased;
   }
 
   /* Custom Utility Classes */
-  .gradient-blue {
-    background: var(--gradient-blue);
+  .gradient-primary {
+    background: var(--gradient-primary);
   }
 
-  .gradient-purple {
-    background: var(--gradient-purple);
+  .gradient-secondary {
+    background: var(--gradient-secondary);
   }
 
-  .gradient-pink {
-    background: var(--gradient-pink);
+  .gradient-accent {
+    background: var(--gradient-accent);
   }
 
   .gradient-subtle {
     background: var(--gradient-subtle);
+  }
+
+  /* Eyebrow Heading Styles */
+  .eyebrow-heading {
+    @apply text-xs font-medium text-primary uppercase tracking-wider mb-3 text-center;
   }
 
   .shadow-glow {

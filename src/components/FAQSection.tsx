@@ -37,9 +37,10 @@ export function FAQSection() {
   return (
     <Section id="faq" className="bg-gradient-subtle">
       <div className="text-center mb-16">
+        <div className="eyebrow-heading">Common Inquiries</div>
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
           Frequently Asked{" "}
-          <span className="gradient-pink bg-clip-text text-transparent">
+          <span className="gradient-accent bg-clip-text text-transparent">
             Questions
           </span>
         </h2>

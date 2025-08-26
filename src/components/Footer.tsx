@@ -14,11 +14,11 @@ export function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="text-2xl font-bold gradient-blue bg-clip-text text-transparent mb-4">
-              MVP Studio
+            <div className="text-2xl font-bold gradient-primary bg-clip-text text-transparent mb-4">
+              Varnixz
             </div>
             <p className="text-muted-foreground">
-              Transforming ideas into market-ready MVPs with proven development expertise.
+              Transforming ideas into market-ready MVPs with premium development expertise.
             </p>
           </div>
 
@@ -43,7 +43,7 @@ export function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border text-center text-muted-foreground">
-          <p>&copy; 2024 MVP Studio. All rights reserved. Building the future, one MVP at a time.</p>
+          <p>&copy; 2024 Varnixz. All rights reserved. Building the future, one MVP at a time.</p>
         </div>
       </Section>
     </footer>

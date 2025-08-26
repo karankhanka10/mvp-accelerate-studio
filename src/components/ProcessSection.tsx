@@ -29,9 +29,10 @@ export function ProcessSection() {
   return (
     <Section id="process" className="bg-gradient-subtle">
       <div className="text-center mb-16">
+        <div className="eyebrow-heading">Our Methodology</div>
         <h2 className="text-4xl md:text-5xl font-bold mb-4">
           Process is{" "}
-          <span className="gradient-purple bg-clip-text text-transparent">
+          <span className="gradient-secondary bg-clip-text text-transparent">
             Everything
           </span>
         </h2>
@@ -49,7 +50,7 @@ export function ProcessSection() {
               className="p-8 text-center animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-16 h-16 mx-auto mb-6 gradient-blue rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 mx-auto mb-6 gradient-primary rounded-xl flex items-center justify-center">
                 <IconComponent className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-semibold mb-4">{process.title}</h3>
