@@ -8,52 +8,51 @@ All colors MUST be HSL for proper theming.
 
 @layer base {
   :root {
-    /* Services section color palette */
-    --background: 219 28% 5%; /* #0B0D13 */
-    --foreground: 0 0% 100%; /* #FFFFFF */
+    /* Premium Dark Theme - Varnixz */
+    --background: 0 0% 2%;
+    --foreground: 0 0% 98%;
 
     /* Card System */
-    --card: 219 20% 7%; /* #111318 */
-    --card-foreground: 0 0% 100%;
-    --card-hover: 219 20% 9%;
+    --card: 0 0% 4%;
+    --card-foreground: 0 0% 98%;
+    --card-hover: 0 0% 7%;
 
     /* Interactive Elements */
-    --popover: 219 20% 7%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 0 0% 4%;
+    --popover-foreground: 0 0% 98%;
 
     /* Premium Brand Colors */
-    --primary: 244 78% 67%; /* #6366F1 indigo */
-    --primary-foreground: 0 0% 100%;
-    --primary-glow: 244 78% 75%;
+    --primary: 260 100% 70%;
+    --primary-foreground: 0 0% 98%;
+    --primary-glow: 260 100% 80%;
 
     /* Secondary UI */
-    --secondary: 219 20% 12%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 0 0% 8%;
+    --secondary-foreground: 0 0% 98%;
 
     /* Muted Elements */
-    --muted: 219 20% 10%;
-    --muted-foreground: 0 0% 62%; /* #9CA3AF */
+    --muted: 0 0% 6%;
+    --muted-foreground: 0 0% 60%;
 
     /* Accent System */
-    --accent: 46 100% 53%; /* #FACC15 warm yellow */
-    --accent-foreground: 0 0% 0%;
-    --accent-glow: 46 100% 63%;
+    --accent: 285 100% 75%;
+    --accent-foreground: 0 0% 98%;
+    --accent-glow: 285 100% 85%;
 
     /* Status Colors */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
 
     /* Borders & Inputs */
-    --border: 219 20% 15%;
-    --input: 219 20% 15%;
-    --ring: 244 78% 67%;
+    --border: 0 0% 15%;
+    --input: 0 0% 10%;
+    --ring: 217 91% 60%;
 
     /* Premium Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(244 78% 67%), hsl(244 78% 75%));
-    --gradient-secondary: linear-gradient(135deg, hsl(270 95% 75%), hsl(270 95% 85%));
-    --gradient-accent: linear-gradient(135deg, hsl(46 100% 53%), hsl(46 100% 63%));
-    --gradient-services: linear-gradient(90deg, hsl(192 100% 67%) 0%, hsl(244 78% 67%) 50%, hsl(284 84% 68%) 100%);
-    --gradient-subtle: linear-gradient(135deg, hsl(219 28% 5%), hsl(219 20% 7%));
+    --gradient-primary: linear-gradient(135deg, hsl(260 100% 70%), hsl(280 100% 75%));
+    --gradient-secondary: linear-gradient(135deg, hsl(285 100% 75%), hsl(305 100% 80%));
+    --gradient-accent: linear-gradient(135deg, hsl(320 100% 75%), hsl(340 100% 70%));
+    --gradient-subtle: linear-gradient(135deg, hsl(0 0% 2%), hsl(0 0% 6%));
 
     /* Shadows & Glows */
     --shadow-glow: 0 0 20px hsl(217 91% 60% / 0.3);
