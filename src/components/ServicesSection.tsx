@@ -1,31 +1,34 @@
 import { Section } from "@/components/ui/section"
-import { CardHover } from "@/components/ui/card-hover"
-import { Monitor, Palette, Globe, Smartphone } from "lucide-react"
+import { Monitor, PenTool, Globe, Smartphone } from "lucide-react"
+import mvpImage from "@/assets/mvp-development.jpg"
+import websiteImage from "@/assets/website-design.jpg"
 
 const services = [
   {
     icon: Monitor,
     title: "MVP Development",
-    description: "Full-stack web applications built with modern technologies, scalable architecture, and clean code.",
-    gradient: "gradient-primary"
+    description: "Developing breathtaking, user-centric MVPs that boost engagement, conversions, and growth, perfectly aligned with your brand.",
+    hasImage: true,
+    image: mvpImage
   },
   {
-    icon: Palette,
-    title: "Logo Design", 
-    description: "Memorable brand identities that capture your vision and resonate with your target audience.",
-    gradient: "gradient-secondary"
+    icon: PenTool,
+    title: "AI Automation", 
+    description: "Crafting distinctive, scalable, and impactful logos that embody your brand's identity and vision.",
+    hasImage: false
   },
   {
     icon: Globe,
     title: "Website Design",
-    description: "Stunning, responsive websites that convert visitors into customers with optimized user experience.",
-    gradient: "gradient-accent"
+    description: "Bringing ideas to life with interactive, user-centered designs that simplify complexity and elevate user experience.",
+    hasImage: true,
+    image: websiteImage
   },
   {
     icon: Smartphone,
     title: "App Development",
-    description: "Native and cross-platform mobile applications that deliver exceptional user experiences.",
-    gradient: "gradient-primary"
+    description: "Beautiful, user-friendly apps that people enjoy using—and keep coming back for.",
+    hasImage: false
   }
 ]
 
@@ -45,23 +48,38 @@ export function ServicesSection() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {services.map((service, index) => {
           const IconComponent = service.icon
           return (
             <div 
               key={service.title}
-              className="animated-border group relative bg-gradient-to-br from-slate-900/40 to-slate-800/20 p-8 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-glow animate-fade-in"
+              className="group relative bg-card rounded-xl p-6 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_30px_rgba(99,102,241,0.3)] animate-fade-in border border-border/20"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className={`w-16 h-16 mb-6 ${service.gradient} rounded-xl flex items-center justify-center shadow-lg`}>
-                <IconComponent className="w-8 h-8 text-white" />
+              {/* Icon */}
+              <div className="flex items-center justify-center w-12 h-12 mb-6 rounded-lg bg-primary/10 border border-primary/20">
+                <IconComponent className="w-6 h-6 text-primary" />
               </div>
-              <h3 className="text-2xl font-semibold mb-4 text-white">{service.title}</h3>
-              <p className="text-gray-300 text-lg leading-relaxed">{service.description}</p>
               
-              {/* Subtle accent line */}
-              <div className="mt-6 w-12 h-0.5 bg-gradient-to-r from-primary to-accent rounded-full"></div>
+              {/* Content */}
+              <h3 className="text-xl font-bold mb-4 text-foreground">{service.title}</h3>
+              <p className="text-muted-foreground text-base leading-relaxed mb-6">{service.description}</p>
+              
+              {/* Supporting image for MVP Development and Website Design */}
+              {service.hasImage && (
+                <div className="relative rounded-lg overflow-hidden h-32 bg-gradient-services">
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-full object-cover mix-blend-overlay opacity-80"
+                  />
+                  <div className="absolute inset-0 bg-gradient-services opacity-60"></div>
+                  <div className="absolute bottom-3 left-3 text-white text-sm font-medium">
+                    {service.title}
+                  </div>
+                </div>
+              )}
             </div>
           )
         })}
