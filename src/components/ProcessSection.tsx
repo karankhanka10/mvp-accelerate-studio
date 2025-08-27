@@ -1,27 +1,25 @@
 import { Section } from "@/components/ui/section"
-import { CardHover } from "@/components/ui/card-hover"
-import { Lightbulb, Code, Rocket, TrendingUp } from "lucide-react"
 
 const processes = [
   {
-    icon: Lightbulb,
-    title: "Concept",
-    description: "We dive deep into your vision, understanding market needs and defining clear objectives for your MVP."
+    step: 1,
+    title: "Discovery & Strategy",
+    description: "We analyze your market, define clear objectives, and create a strategic roadmap for your MVP's success in the competitive landscape."
   },
   {
-    icon: Code,
-    title: "Execution",
-    description: "Our expert team brings your idea to life with cutting-edge technology and proven development practices."
+    step: 2,
+    title: "Design & Development",
+    description: "Our expert team crafts intuitive user experiences and builds robust, scalable solutions using cutting-edge technologies."
   },
   {
-    icon: Rocket,
-    title: "Kickoff",
-    description: "Launch your MVP to market with comprehensive testing, optimization, and deployment strategies."
+    step: 3,
+    title: "Testing & Launch",
+    description: "Comprehensive quality assurance, performance optimization, and strategic market deployment to ensure flawless execution."
   },
   {
-    icon: TrendingUp,
-    title: "Beyond Growth",
-    description: "Scale your success with ongoing support, feature iterations, and data-driven improvements."
+    step: 4,
+    title: "Growth & Scale",
+    description: "Continuous optimization, feature enhancement, and data-driven improvements to maximize your product's market impact."
   }
 ]
 
@@ -41,23 +39,39 @@ export function ProcessSection() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-        {processes.map((process, index) => {
-          const IconComponent = process.icon
-          return (
-            <CardHover 
-              key={process.title}
-              className="p-8 text-center animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
-            >
-              <div className="w-16 h-16 mx-auto mb-6 gradient-primary rounded-xl flex items-center justify-center">
-                <IconComponent className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-xl font-semibold mb-4">{process.title}</h3>
-              <p className="text-muted-foreground">{process.description}</p>
-            </CardHover>
-          )
-        })}
+      <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-6">
+        {processes.map((process, index) => (
+          <div 
+            key={process.step}
+            className="animated-border group relative bg-gradient-to-br from-slate-900/50 to-slate-800/30 p-8 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-glow animate-fade-in"
+            style={{ animationDelay: `${index * 0.1}s` }}
+          >
+            {/* Step Number Circle */}
+            <div className="absolute top-6 right-6 w-8 h-8 rounded-full border border-gray-600 flex items-center justify-center">
+              <span className="text-sm font-semibold text-white">{process.step}</span>
+            </div>
+            
+            {/* Content */}
+            <div className="space-y-4">
+              <h3 className="text-xl font-bold text-white leading-tight">
+                {process.title}
+              </h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                {process.description}
+              </p>
+            </div>
+            
+            {/* Divider */}
+            <div className="border-t border-gray-700 mt-6 mb-4"></div>
+            
+            {/* Step Label */}
+            <div className="flex justify-start">
+              <span className="px-3 py-1 text-xs rounded-full border border-gray-600 text-gray-400 font-medium">
+                Step {process.step}
+              </span>
+            </div>
+          </div>
+        ))}
       </div>
     </Section>
   )

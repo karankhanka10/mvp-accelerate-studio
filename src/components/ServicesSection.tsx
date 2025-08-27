@@ -49,18 +49,20 @@ export function ServicesSection() {
         {services.map((service, index) => {
           const IconComponent = service.icon
           return (
-            <CardHover 
+            <div 
               key={service.title}
-              glowOnHover
-              className="p-8 animate-fade-in"
+              className="animated-border group relative bg-gradient-to-br from-slate-900/40 to-slate-800/20 p-8 rounded-xl hover:scale-105 transition-all duration-300 hover:shadow-glow animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className={`w-16 h-16 mb-6 ${service.gradient} rounded-xl flex items-center justify-center`}>
+              <div className={`w-16 h-16 mb-6 ${service.gradient} rounded-xl flex items-center justify-center shadow-lg`}>
                 <IconComponent className="w-8 h-8 text-white" />
               </div>
-              <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>
-              <p className="text-muted-foreground text-lg">{service.description}</p>
-            </CardHover>
+              <h3 className="text-2xl font-semibold mb-4 text-white">{service.title}</h3>
+              <p className="text-gray-300 text-lg leading-relaxed">{service.description}</p>
+              
+              {/* Subtle accent line */}
+              <div className="mt-6 w-12 h-0.5 bg-gradient-to-r from-primary to-accent rounded-full"></div>
+            </div>
           )
         })}
       </div>

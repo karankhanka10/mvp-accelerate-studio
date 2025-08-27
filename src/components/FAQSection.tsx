@@ -9,27 +9,27 @@ import {
 const faqs = [
   {
     question: "Who Do You Work With?",
-    answer: "We partner with startups, entrepreneurs, and established businesses looking to validate new ideas or expand their digital presence. Our clients range from solo founders to enterprise teams."
+    answer: "We partner with ambitious startups, innovative entrepreneurs, and forward-thinking enterprises looking to validate breakthrough ideas or expand their digital footprint. Our diverse clientele includes solo founders with game-changing concepts, scaling startups seeking technical excellence, and established companies launching new product lines. We specialize in working with visionaries who understand that speed-to-market and technical quality are equally crucial for success."
   },
   {
     question: "What's Your Design Process Like?",
-    answer: "Our process starts with understanding your vision and market needs. We then create wireframes, design prototypes, develop your MVP, and provide ongoing support for iterations and improvements."
+    answer: "Our process begins with deep market research and user persona analysis to understand your target audience's pain points. We then conduct comprehensive wireframing sessions, create interactive prototypes for user testing, develop your MVP using agile methodologies, and provide ongoing optimization based on real user feedback. Every step is transparent, collaborative, and focused on creating products that users genuinely love."
   },
   {
     question: "How Long Does MVP Development Take?",
-    answer: "Most MVPs are completed within 4-8 weeks, depending on complexity and requirements. We provide detailed timelines during our initial consultation."
+    answer: "Timeline varies based on complexity and scope, but most MVPs are delivered within 4-8 weeks. Simple MVPs with core functionality can be ready in 3-4 weeks, while more complex solutions with advanced features may take 6-8 weeks. We provide detailed project timelines, milestone deliverables, and weekly progress updates during our initial consultation to ensure complete transparency."
   },
   {
     question: "Do You Provide Ongoing Support?",
-    answer: "Yes! We offer various support packages including bug fixes, feature updates, performance monitoring, and technical maintenance to ensure your MVP continues to perform optimally."
+    answer: "Absolutely! We offer comprehensive post-launch support packages including 24/7 monitoring, bug fixes, security updates, performance optimization, feature enhancements, and technical maintenance. Our support tiers range from basic maintenance to full-scale product evolution, ensuring your MVP continues to perform optimally as you scale and grow your user base."
   },
   {
     question: "What Technologies Do You Use?",
-    answer: "We use modern, scalable technologies including React, Next.js, Node.js, TypeScript, and cloud platforms like AWS and Vercel. We choose the best tech stack for your specific needs."
+    answer: "We leverage cutting-edge, enterprise-grade technologies including React, Next.js, TypeScript, Node.js, Python, PostgreSQL, MongoDB, AWS, Vercel, and Docker. Our tech stack selection is always strategic – we choose technologies that provide the best scalability, performance, and maintainability for your specific use case and long-term growth plans."
   },
   {
     question: "Can You Help With Funding and Investment?",
-    answer: "While we focus on development, we can provide technical documentation and demo materials that help with investor presentations. Many of our clients have successfully raised funding after launching their MVPs."
+    answer: "While our core expertise is development, we support your fundraising journey by creating compelling technical documentation, investor demo materials, pitch deck assets, and detailed technical specifications that impress investors. Many of our clients have successfully raised seed rounds, Series A funding, and secured strategic partnerships after launching their MVPs with us."
   }
 ]
 
